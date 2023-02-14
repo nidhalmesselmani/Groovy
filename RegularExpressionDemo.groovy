@@ -1,7 +1,9 @@
 // reges - patterns used to find substrings in a text
 // ~"expression"
 
-def match = "Grooovy" =~ "o"
+def regex = / (?:[^Groovy]*) /
+
+def match = "This is Groovy" =~ regex
 
 
 if (match) {
